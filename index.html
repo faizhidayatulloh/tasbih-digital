@@ -6,44 +6,25 @@
 	<title>Perjuanganku</title>
 </head>
 <body>
-	<div class="header">
-		<h1>Latihan Bikin Web Simple</h1>
-		<p>Calon Programmer Full Stack.</p>
+	<div class="satu">
+		<h1>Cek apakah kalian sudah boleh nikah berdasarkan usia kalian !!</h1>
+		<p>Ini tempat untuk cek usia kalian berdasarkan aturan pemerintah.</p>
 	</div>
-	<div class="nav">
-		<a href="#fdfdf">Menu</a>
-		<a href="#dfdfd">Profil</a>
-		<a href="#dfdfdf">Sejarah</a>
-		<a href="#dff" style="float: right;">Hubungi Kami</a>
+	<hr/>
+	<div class="dua">
+		<h2>Ketikan usia kalian :</h2>
+		<input id="faiz"><br/><br/>
+		<button type="button" onclick="alin()">Klik untuk cek</button>
 	</div>
-	<div class="row">
-		<div class="leftKolom">
-			<div class="latarBelakang">
-			<h1>My Dream</h1>
-			<h5>7 Desemnber 1998</h5>
-			<img src="faiz.jpg" alt="gambar">
-			<p>Seperti kata kitab Al Imriti, seorang pemuda bisa menjadi mulia karena cita-citanya, apakah kalian tahu apa cita-cita saya, saya ingin menjadi orang yang senantiasa taat menjalankan perintah agama, dan menjadi orang yang bisa memberi manfaat kepada orang lain, karena kata Nabi, <q>Sebaik-baik manusia adalah yang paling bermanfaat untuk orang lain</q>. </p>
-			</div>
-			<div class="latarBelakang">
-			<h1>Keinginan Duniawi</h1>
-			<h5>10 Juli 2022</h5>
-			<img src="linda.jpg" alt="nanas"/>
-			<p>Jujur saya tidak tahu kenapa saya suka sekali pada hal-hal yang berbau komputer, terutama bahasa pemrograman, karena kecintaan saya pada hal tersebut, saya selalu berusaha mempelajarinya walaupun itu sangat memumetkan kepala saya, tapi karena efek cinta, mumetpun bisa hilang, target saya adalah bisa menjadi Full-Stack Developer, kalau Alloh izinkan saya juga ingin bisa memahami Web Security, agar bisa menghack media sosial dan Whatsapp kalian semua. Amiin</p>
-			</div>
-		</div>
-		<div class="rightKolom">
-			<div class="latarBelakang marginKiri">
-				<h1>Tentang Kami :</h1>
-				<img src="faiz.jpg" alt="faiz" alt="kami"/>
-				<p>Nama saya Faiz, saya lahir di Desa Lembah duwur tempat dimana ayah saya dilahrikan,kemudian pada umur 4 tahun kalau gak salah, saya pindah ke Gandusari tempat dimana saya berada sampai saat ini. Sudah itu saja karena jari saya capek mengetik.</p>
-			</div>
-			<div class="latarBelakang marginKiri">
-				<h1>Perjuangan Kami :</h1>
-				<h5>Oleh : M Faiz Hidayatulloh</h5>
-				<img src="faiz.jpg" alt="faiz"/>
-				<p>Di dalam perjuangan yang saya lakukan, saya selalu memohon pertolongan kepada tuhan saya, yaitu Alloh yang maha kuasa.</p>
-			</div>
-		</div>
+	<div class="tiga">
+		<h1 style="color: white;" id="hasil"></h1>
 	</div>
+	<script>
+	function alin() {
+		let usia = document.getElementById('faiz').value;
+		let batasUsia = (usia <=19)? "Kamu masih bocil, belum boleh nikah !!" : "Sudah saatnya kamu Mbojo !!";
+		document.getElementById('hasil').innerHTML = batasUsia;
+	}
+	</script>
 </body>
 </html>
