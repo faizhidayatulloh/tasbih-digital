@@ -1,25 +1,28 @@
-body {background-color: black;}
+body {background-color: white;padding: 10px;
+font-family: 'Libre Baskerville',serif;
+}
 
-
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 30px;  
+}
 .satu {
-	background-color: blue;
-	color: white;
+	background-color: yellow;
+	color: black;
 	text-align: center;
 	padding: 10px 20px;
-	border-radius: 10px;
 }
 .satu p {font-size: 20px}
 
 .dua {
 	text-align: center;
-	border : 1px solid blue;
+	border : 1px solid black;
 	padding: 20px;
-	width: 50%;
-	color: white;
+	max-width: 100%;
+	color: black;
 	margin:auto;
 	margin-top: 20px;
-	background-color: gray;
-	border-radius: 5px;
+	background-color: lightgray;
 }
 [type="button"] {
 	padding: 10px 15px;
