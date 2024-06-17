@@ -8,7 +8,8 @@
 <body>
 	<div class="satu">
 		<h1>Cek apakah kalian sudah boleh nikah berdasarkan usia kalian !!</h1>
-		<p>Ini tempat untuk cek usia kalian berdasarkan aturan pemerintah.</p>
+		<h3>Ini tempat untuk cek usia kalian berdasarkan aturan pemerintah.</h3>
+		<h4>( Di sponsori Oleh Mehmed Faiz )
 	</div>
 	<hr/>
 	<div class="dua">
@@ -17,12 +18,12 @@
 		<button type="button" onclick="alin()">Klik untuk cek</button>
 	</div>
 	<div class="tiga">
-		<h1 style="color: white;" id="hasil"></h1>
+		<h1 id="hasil"></h1>
 	</div>
 	<script>
 	function alin() {
 		let usia = document.getElementById('faiz').value;
-		let batasUsia = (usia <=19)? "Kamu masih bocil, belum boleh nikah !!" : "Sudah saatnya kamu Mbojo !!";
+		let batasUsia = (usia < 19)? "Kamu masih bocil, belum boleh nikah !!" : "Sudah saatnya kamu Mbojo !!";
 		document.getElementById('hasil').innerHTML = batasUsia;
 	}
 	</script>
