@@ -8,36 +8,17 @@
 <body>
 	<div class="satu">
 		<h1>Cek apakah kalian sudah boleh nikah berdasarkan usia kalian !!</h1>
-		<h3>Ini tempat untuk cek usia kalian berdasarkan aturan pemerintah.</h3>
+		<h3>Disini kalian bisa cek apakah kalian sudah boleh menikah berdasar usia kalian.</h3>
 		<h4>( Di sponsori Oleh Mehmed Faiz )
 	</div>
 	<hr/>
-	<h1 style="color: white;text-align: center;" id="hasil"></h1>
+	<div id="hasil">kamu masih bocil</div>
 	<div class="dua">
-		<h2>Ketikan usia kalian :</h2>
+		<h2>Ketikan usia kalian</h2>
 		<input id="faiz"><br/><br/>
 		<button type="button" onclick="alin()">Klik untuk cek</button>
 	</div>
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -46,6 +27,7 @@
 		let usia = document.getElementById('faiz').value;
 		let batasUsia = (usia < 19)? "Kamu masih bocil, belum boleh nikah !!" : "Sudah saatnya kamu Mbojo !!";
 		document.getElementById('hasil').innerHTML = batasUsia;
+		document.getElementById('hasil').style.display = "block";
 	}
 	</script>
 </body>
