@@ -21,9 +21,9 @@ span {
 @keyframes faiz {
 	0% {left: 0;}
 	50% {color: black;text-shadow: none;}
-	100% {left: 1000px;}
+	100% {left: 500px;}
 }
-input {display: block;height: 30px;}
+input {height: 30px;}
 button {
 	margin-top: 20px;
 	border: none;
