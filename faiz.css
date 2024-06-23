@@ -1,20 +1,20 @@
-body {background-color: black;}
+body {background-color:white;}
 * {box-sizing: border-box;}
-h1,p {color: white;}
-.gambar {
-	width: 10%;
-	height: 100px;
-	background-color: blue;
+div {
+	width: 500px;
 	position: relative;
-	margin-bottom: 10px;
 	animation-name: faiz;
-	border-radius: 20px;
-	box-shadow: 0 0 20px white;
-	animation-duration: 7s;
-	animation-iteration-count: infinite;
+	animation-duration: 3s;
 	animation-direction: alternate-reverse;
+	animation-iteration-count:infinite;
+}
+h1 {
+	font-size: 5vw;
+	color:red;
+	text-align: center;
+	text-shadow: 0 0 10px blue,0 2px 20px yellow;
 }
 @keyframes faiz {
 	from {left: 0px;}
-	to {left: 100%;}
+	to {left: 800px;}
 }

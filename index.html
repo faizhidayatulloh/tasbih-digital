@@ -6,11 +6,18 @@
 	<title>Animasiku</title>
 </head>
 <body>
-<h1>My Family</h1>
-<p>Dibawah ini adalah contoh efek animasi dengan bahasa CSS</p>
-<hr/>
-<div class="gambar" style="animation-timing-function: ease;background-image: url(faiz.png);background-size: contain;"></div>
-<div class="gambar" style="animation-timing-function: linear;background-image: url(linda.jpg);background-size: contain;"></div>
-<div class="gambar" style="height: 150px;animation-timing-function: ease-in-out;background-image: url(diya.jpg);background-size: cover;"></div>
+<div>
+<h1 id="tampil">Tulisan indah</h1>
+</div>
+<p>Ubah tulisan di atas menjadi namamu :</p>
+<input id="masukan"/>
+<button onclick="alin()">Ubah</button>
+
+<script>
+function alin() {
+let nama = document.getElementById("masukan").value;
+document.getElementById('tampil').innerHTML=nama;
+}
+</script>
 </body>
 </html>
