@@ -3,32 +3,14 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="faiz.css"/>
-	<title>Cek Usia Nikah</title>
+	<title>Animasiku</title>
 </head>
 <body>
-	<div class="satu">
-		<h1>Cek apakah kalian sudah boleh nikah berdasarkan usia kalian !!</h1>
-		<h3>Disini kalian bisa cek apakah kalian sudah boleh menikah berdasar usia kalian.</h3>
-		<h4>( Di sponsori Oleh Moh Faiz )
-	</div>
-	<hr/>
-	<div id="hasil">kamu masih bocil</div>
-	<div class="dua">
-		<h2>Ketikan usia kalian</h2>
-		<input id="faiz"><br/><br/>
-		<button type="button" onclick="alin()">Klik untuk cek</button>
-	</div>
-	
-
-
-
-	<script>
-	function alin() {
-		let usia = document.getElementById('faiz').value;
-		let batasUsia = (usia < 19)? "Kamu masih bocil, belum boleh nikah !!" : "Sudah saatnya kamu Mbojo !!";
-		document.getElementById('hasil').innerHTML = batasUsia;
-		document.getElementById('hasil').style.display = "block";
-	}
-	</script>
+<h1>My Family</h1>
+<p>Dibawah ini adalah contoh efek animasi dengan bahasa CSS</p>
+<hr/>
+<div class="gambar" style="animation-timing-function: ease;background-image: url(faiz.png);background-size: contain;"></div>
+<div class="gambar" style="animation-timing-function: linear;background-image: url(linda.jpg);background-size: contain;"></div>
+<div class="gambar" style="height: 150px;animation-timing-function: ease-in-out;background-image: url(diya.jpg);background-size: cover;"></div>
 </body>
 </html>

@@ -1,51 +1,20 @@
-body {
-	background-color: black;
-	padding: 10px;
-	font-family: 'Libre Baskerville',serif;
-}
+body {background-color: black;}
 * {box-sizing: border-box;}
-
-h1 {
-  font-family: cursive;
-  font-size: 30px;  
-}
-
-.satu {
-	background-color: dodgerblue;
-	border-radius: 5px;
-	color: black;
-	text-align: center;
-	padding: 10px 20px;
-}
-
-.dua {
-	text-align: center;
-	border : 1px solid black;
-	padding: 20px;
-	max-width: 100%;
-	color: black;
-	margin:auto;
-	margin-top: 20px;
-	background-color: dodgerblue;
-}
-[type="button"] {
-	padding: 10px 15px;
-	font-size: 15px;
-	font-weight: bolder;
-}
-
-input {
-	padding: 10px;
+h1,p {color: white;}
+.gambar {
+	width: 10%;
+	height: 100px;
+	background-color: blue;
 	position: relative;
+	margin-bottom: 10px;
+	animation-name: faiz;
+	border-radius: 20px;
+	box-shadow: 0 0 20px white;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
 }
-
-#hasil {
-	width: 100%;
-	border: 1px solid white;
-	color: white;
-	text-align: center;
-	font-size: 50px;
-	font-weight: bolder;
-	display: none;
-	text-shadow: 0px 0px 5px white,1px 0px 10px white;
+@keyframes faiz {
+	from {left: 0px;}
+	to {left: 100%;}
 }
