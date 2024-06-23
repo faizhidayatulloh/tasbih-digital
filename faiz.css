@@ -5,16 +5,18 @@ div {
 	position: relative;
 	animation-name: faiz;
 	animation-duration: 3s;
+	margin-right: 20px;
 	animation-direction: alternate-reverse;
 	animation-iteration-count:infinite;
+	animation-timing-function: linear;
 }
 h1 {
-	font-size: 5vw;
-	color:red;
-	text-align: center;
+	font-size: 70px;
 	text-shadow: 0 0 10px blue,0 2px 20px yellow;
+	padding: 10px;
 }
 @keyframes faiz {
-	from {left: 0px;}
-	to {left: 800px;}
+	0% {left: 0px;color: yellow;}
+	50% {left: 50%;color: purple;}
+	100% {left: 80%;color:red;}
 }
