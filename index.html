@@ -6,18 +6,22 @@
 	<title>Animasiku</title>
 </head>
 <body>
-<div>
-<h1 id="tampil">Tulisan indah</h1>
+<h1>My simple animation</h1>
+<P>Ini adalah contoh animasi sederhana dengan CSS.</P>
+<div class="wadah">
+	<span id="nama">Nama Anda</span>
 </div>
-<p>Ubah tulisan di atas menjadi namamu :</p>
-<input id="masukan"/>
-<button onclick="alin()">Ubah</button>
-
+<p>Ketikan nama anda :</p>
+<input value="nama sampean" id="masukan"/>
+<button type="button" onclick="alin()">Ubah sekarang</button>
 <script>
-function alin() {
-let nama = document.getElementById("masukan").value;
-document.getElementById('tampil').innerHTML=nama;
-}
+	function alin() {
+		let x = document.getElementById("masukan").value;
+		document.getElementById("nama").innerHTML = x;
+	}
 </script>
+</body>
+</html></button>
+
 </body>
 </html>

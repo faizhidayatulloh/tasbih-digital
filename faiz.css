@@ -1,22 +1,38 @@
-body {background-color:white;}
 * {box-sizing: border-box;}
-div {
-	width: 500px;
+.wadah {
+	max-width: 100%;
+	height: 300px;
+	padding: 20px ;
+	background-color: black;
 	position: relative;
+}
+span {
+	font-size: 30px;
+	font-weight: bolder;
+	color: white;
+	position: absolute;
+	text-shadow: -1px 0 5px wheat,0 0 10px white,0 1px 30px white,0 0 60px blue;
 	animation-name: faiz;
-	animation-duration: 3s;
-	margin-right: 20px;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 	animation-direction: alternate-reverse;
-	animation-iteration-count:infinite;
-	animation-timing-function: linear;
 }
-h1 {
-	font-size: 70px;
-	text-shadow: 0 0 10px blue,0 2px 20px yellow;
-	padding: 10px;
-}
+
 @keyframes faiz {
-	0% {left: 0px;color: yellow;}
-	50% {left: 50%;color: purple;}
-	100% {left: 80%;color:red;}
+	0% {left: 0;}
+	50% {color: black;text-shadow: none;}
+	100% {left: 1000px;}
+}
+input {display: block;height: 30px;}
+button {
+	margin-top: 20px;
+	border: none;
+	font-size: 15px;
+	padding: 10px 20px;
+	background-color: green;
+	font-weight: bold;
+
+}
+button:hover {
+	background-color: red;
 }
