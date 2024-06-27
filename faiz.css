@@ -3,11 +3,7 @@
     clear: both;
     display: table;
   }
-body {
-        font-size: 16px;  
-        margin: 20PX;
-        color: #003d00;
-      }
+
 /*bikin header*/
 .header {
     overflow: hidden;
@@ -15,19 +11,16 @@ body {
 }
 img {
     float: left;
-    width: 200px;
-    margin-top: -30px;
-    margin-bottom: -30px;
+    width: 10%;
 }
 .text {
     margin-left: auto;
     margin-right: auto;
-    font-size: 50px;
+    font-size: 2vw;
     text-align: center;
-    float: left;
     position: absolute;
-    left: 20%;
-    top: 10%;
+    left: 10%;
+    top: 9%;
     font-weight: bold;
     color: #003d00;
     text-shadow: 0 0 10px green;
@@ -36,15 +29,15 @@ img {
 .nav {
     background-color: #003d00;
     max-width: 100%;
-    margin-top: 20px;
+    margin-top: 1%;
     text-align: center;
     position: sticky;
-    top: 10px;
+    top: 0;
 }
 a {
     color :white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2vw;
     padding: 20px;
     display: inline-block;
 }
