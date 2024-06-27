@@ -33,12 +33,13 @@ img {
     text-align: center;
     position: sticky;
     top: 0;
+    padding: 10px;
 }
 a {
     color :white;
     text-decoration: none;
-    font-size: 3vw;
-    padding: 10px;
+    font-size: 4vw;
+    padding: 5px;
     display: inline-block;
 }
 a:hover {
