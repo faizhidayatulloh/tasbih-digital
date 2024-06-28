@@ -1,8 +1,8 @@
 body {
     background-color: #deebff;
     animation-name: faiz;
-    animation-duration: 10s;
-    animation-delay: 11s;
+    animation-duration: 4s;
+    animation-delay:4s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
@@ -29,7 +29,7 @@ h1 {font-weight: bolder;color: white;text-shadow: -1px 0 20px white;}
     left: 5px;
     top: 200px;
     animation-name: bulan;
-    animation-duration: 20s;
+    animation-duration: 8s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
@@ -40,7 +40,7 @@ h1 {font-weight: bolder;color: white;text-shadow: -1px 0 20px white;}
     left: 100px;
     color: #deebff;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 20px;
     text-shadow: -1px 0 20px #deebff;
     z-index: -1;
     padding: 0;
@@ -48,7 +48,8 @@ h1 {font-weight: bolder;color: white;text-shadow: -1px 0 20px white;}
 .gambar {
     max-width: 100%;
     position: absolute;
-    top: 310px;
+    bottom: 0px;
+    left: 0;
     opacity: 0;
     animation-name: gambar;
     animation-duration: 18s;
@@ -71,4 +72,9 @@ img {
 @keyframes gambar {
     from {opacity: 1}
     to {opacity: 0.1}
+}
+
+@media only screen and (min-width:1000px) {
+    .gambar {bottom: -500px}
+    .tulisan {font-size: 50px;z-index: 1;left: 200px;top: 100px}
 }
