@@ -1,55 +1,74 @@
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  h1 {font-size: 50px;color: #003d00;}
-  p {font-size: 20px;color: #003d00;}
+body {
+    background-color: #deebff;
+    animation-name: faiz;
+    animation-duration: 10s;
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
 
-/*bikin header*/
-.header {
-    position: relative;
-    overflow: hidden;
+h1 {font-weight: bolder;color: white;text-shadow: -1px 0 20px white;}
+.matahari {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: -1px 0 10px white,0 0 20px white,0 1px 30px white,1px 1px 40px white,0 0 50px white;
+}
+
+.bulan {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #393938;
+    filter: blur(2px);
+    position: absolute;
+    left: 5px;
+    top: 200px;
+    animation-name: bulan;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.tulisan {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    color: #deebff;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: -1px 0 20px #deebff;
+    z-index: -1;
+    padding: 0;
+}
+.gambar {
     max-width: 100%;
+    position: absolute;
+    top: 310px;
+    opacity: 0;
+    animation-name: gambar;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    filter: grayscale(50%);
 }
 img {
-    width: 70px;
-    }
-.text {
-    display: inline-block;
-    position: absolute;
-    top: 25px;
-    left: 100px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #003d00;
-    text-shadow: 0 0 10px green;
-}
-/*bikin navigasi*/
-.nav {
-    background-color: #003d00;
     max-width: 100%;
-    margin-top: 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    padding: 15px 0;
 }
-a {
-    color :white;
-    text-decoration: none;
-    font-size: 25px;
-    padding: 10px;
-    display: inline-block;
+/*bikin animatasi terang ke gelap*/
+@keyframes faiz {
+    from {background-color: #deebff;}
+    to {background-color: #393938;}
 }
-a:hover {
-    background-color: white;
-    color:black;
+@keyframes bulan {
+    from {top: 200px;}
+    to {top: 5px;}
 }
-@media only screen and (max-width:400px) {
-    .text { left: 80px;}
-    .nav { padding: 5px 0;}
-    a {padding: 5px;font-size: 15px;}
-    h1 {font-size: 25px;}
-    p {font-size: 15px;}
+@keyframes gambar {
+    from {opacity: 1}
+    to {opacity: 0.1}
 }
