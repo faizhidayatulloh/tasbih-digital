@@ -1,6 +1,10 @@
 .judul {text-align: center;}
 select {
-    width: 100px;
+    width: 150px;
+    height :auto;
+}
+button {
+    padding: 10px 20px;
 }
 
 button:hover {
@@ -8,7 +12,7 @@ button:hover {
 }
 #dua {
     position: absolute;
-    top :50px;
+    top :40px;
     font-size: 70px;
-    color: blue;
+    color: red;
 }
