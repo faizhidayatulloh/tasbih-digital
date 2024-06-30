@@ -7,27 +7,48 @@
 </head>
 <body>
 <!--header-->
-<div class="header"><p>Kelas : 1 Ibtidaiyah</p><p>Pelajaran : Agama</p></div>
+<div class="header">Tes Pengetahuan Anda</p></div>
 <div class="header2"><strong>Pilih salah satu jawaban yang tersedia</strong></div>
 <h1 id="nilai"></h1>
+<div id="kunci">
+	<strong>Kunci Jawaban</strong> <br/><br/>
+	1.boleh<br/>
+	2.boleh<br/>
+	3.20<br/>
+	4. Pengin duit banyak tanpa kerja<br/>
+	5. Karena mereka setan
+</div>
 <!--isi -->
 <p>1. Bolehkah kita sholat dengan duduk bersila ketika tahiyat awal &#63;</p>
 <select id="satu">
-	<option value="1">Boleh</option>
+	<option value="2">Boleh</option>
 	<option value="0">tidak boleh</option>
 </select>
 <p>2. Ketika wanita sedang Haidl, bolehkah memotong kuku atau mencukur rambut &#63;</p>
 <select id="dua">
 	<option value="0">Tidak boleh</option>
-	<option value="1">boleh</option>
+	<option value="2">boleh</option>
 </select>
 <p>3. Ada berapa sifat wajib bagi Alloh &#63;</p>
 <select id="tiga">
 	<option value="0">30</option>
 	<option value="0">25</option>
-	<option value="1">20</option>
+	<option value="2">20</option>
 </select>
-<button type="button" onclick="faiz()">Lihat Hasil Tes anda</button>
+<p>4. Kenapa rakyat Indonesia menajadi pengguna judi online terbesar di dunia &#63;</p>
+<select id="empat">
+	<option value="2">Pengin duit banyak tanpa kerja</option>
+	<option value="0">Pengin menyenangkan bandar</option>
+	<option value="0">Pengin masuk neraka</option>
+</select>
+<p>5. Kenapa di Indonesia banyak koruptor bangsat &#63;</p>
+<select id="lima">
+	<option value="0">Karena pejabat serakah</option>
+	<option value="0">Karena tidak perduli rakyat, yang penting banda akeh</option>
+	<option value="2">Karena mereka setan</option>
+</select>
+<button type="button" onclick="faiz();alin()">Lihat Hasil Tes anda</button>
+
 
 <script>
 function faiz () {
@@ -37,10 +58,18 @@ function faiz () {
 	dua = Number(dua);
 	let tiga = document.getElementById('tiga').value;
 	tiga = Number(tiga);
-	nilai = satu + dua + tiga;
+	let empat = document.getElementById('empat').value;
+	empat = Number(empat);
+	let lima = document.getElementById('lima').value;
+	lima = Number(lima);
+	nilai = satu + dua + tiga+empat+lima;
 	document.getElementById('nilai').innerHTML = nilai;
-	// body...
 }
+	// body...
+function alin() {
+	document.getElementById('kunci').style.opacity=1;
+}
+
 </script>
 </body>
 </html></button>
