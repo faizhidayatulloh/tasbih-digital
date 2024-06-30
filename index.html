@@ -6,32 +6,42 @@
 	<title>Jawab dengan benar !</title>
 </head>
 <body>
-
-<label for="satu">1. Dimana Nabi Muhammad di lahirkan ?</label><br/></br/>
-<select id="satu" name="soalsatu">
-	<option value="1">Mekkah</option>
-	<option value="0">Madinah</option>
-	<option value='0'>Gombong</option>
-</select><br/><br/>
-<label for="dua">2. Siapa nama istri saya ( Mehmed Faiz ) </label><br/><br/>
-<select id="dua" name="soaldua">
-	<option value="1">Alynda</option>
-	<option value="0">Slamet</option>
-	<option value="0">Siti</option>
-</select>
-<button type="button" onclick="faiz()">Lihat Nilai Anda</button>
+<!--header-->
+<div class="header"><p>Kelas : 1 Ibtidaiyah</p><p>Pelajaran : Agama</p></div>
+<div class="header2"><strong>Pilih salah satu jawaban yang tersedia</strong></div>
 <h1 id="nilai"></h1>
+<!--isi -->
+<p>1. Bolehkah kita sholat dengan duduk bersila ketika tahiyat awal &#63;</p>
+<select id="satu">
+	<option value="1">Boleh</option>
+	<option value="0">tidak boleh</option>
+</select>
+<p>2. Ketika wanita sedang Haidl, bolehkah memotong kuku atau mencukur rambut &#63;</p>
+<select id="dua">
+	<option value="0">Tidak boleh</option>
+	<option value="1">boleh</option>
+</select>
+<p>3. Ada berapa sifat wajib bagi Alloh &#63;</p>
+<select id="tiga">
+	<option value="0">30</option>
+	<option value="0">25</option>
+	<option value="1">20</option>
+</select>
+<button type="button" onclick="faiz()">Lihat Hasil Tes anda</button>
+
 <script>
-function faiz() {
+function faiz () {
 	let satu = document.getElementById('satu').value;
-	satu = Number(satu)
+	satu = Number(satu);
 	let dua = document.getElementById('dua').value;
 	dua = Number(dua);
-	hasil = satu + dua;
-	document.getElementById('nilai').innerHTML = hasil;
+	let tiga = document.getElementById('tiga').value;
+	tiga = Number(tiga);
+	nilai = satu + dua + tiga;
+	document.getElementById('nilai').innerHTML = nilai;
+	// body...
 }
 </script>
-
 </body>
 </html></button>
 

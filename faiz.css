@@ -1,0 +1,30 @@
+/*bikin header*/
+.header {
+	background-color: darkblue;
+	text-align: left;
+	color: white;
+}
+.header2 {font-size: 16px;margin-top: 10px;}
+select {
+	width: 50%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid blue;
+	height: 30px;
+	font-size: 16px;
+}
+button {
+	display: block;
+	margin-top: 20px;
+	background-color: darkblue;
+	border:none;
+	padding: 10px 10px;
+	color: white;
+}
+#nilai {
+	position: absolute;
+	top: 100px;
+	right: 100px;
+	color: red;
+}
