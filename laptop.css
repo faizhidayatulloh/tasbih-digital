@@ -1,47 +1,38 @@
-/*bikin header*/
-.header {
-	background-color: darkblue;
+body {margin: 0;font-family: Arial}
+.wadah {
+	display: flex;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	text-align: center;
-	color: white;
-	font-size: 20px;
-	font-weight: bold;
-	padding: 10px 10px;
-	max-width: 100%;
-}
-.header2 {font-size: 16px;margin-top: 10px;}
-#kunci {
-	padding: 10px 20px;
-	width: 50%;
-	height: 300px;
-	position: absolute;
-	top: 150px;
-	left: 80px;
-	background-color: yellow;
-	border: 1px solid blue;
-	opacity: 0;
-}
-select {
+	background-color: lightsalmon;
 	width: 100%;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 2px solid blue;
-	height: 30px;
-	font-size: 16px;
+	height: 100%;
+	color: white;
+	background-color: black;
+}
+.judul {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom:10px;
+}
+.isi {
+	margin-bottom: 20px;
+}
+#hasil {
+	width: 100px;
+	height: 40px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	visibility: hidden;
+}
+.faiz {
+	color: white;
 }
 button {
-	display: block;
-	margin-top: 20px;
-	background-color: darkblue;
-	border:none;
-	padding: 10px 10px;
-	color: white;
-}
-#nilai {
-	position: absolute;
-	top: 300px;
-	right: 170px;
-	color: red;
-	z-index: 1;
-	font-size: 80px;
+	padding: 0 20px;
+	font-size: 15px;
 }
