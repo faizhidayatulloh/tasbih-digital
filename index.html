@@ -9,13 +9,22 @@
 </head>
 <body>
 <div id="faiz"></div>
-
+<div class="wadah">
+	<div class="judul">Cek Zodiak</div>
+	<div class="isi">
+		<p>Bulan Lahir:</p>
+		<input id="bulan" type="number" min="1" max="12" autofocus/><br/>
+		<p>Tanggal Lahir :</p>
+		<input id="tanggal" type="number"/>
+		<button type="button" onclick="cek();tampil()">Kirim</button>
+	</div>
+</div>
 
 
 
 
 <script>
-function tampil() {document.getElementById('faiz').style.visibility="visible";}
+function tampil() {document.getElementById('faiz').style.right=0;}
 function cek () {
 	let kata ='';
 	let a = new Date(2000,0,20); //januari
