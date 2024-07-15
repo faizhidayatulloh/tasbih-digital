@@ -10,10 +10,14 @@ div {
     background-color: rgb(0, 204, 255);
     visibility: hidden;
     padding: 20px;
+    transition: 2s all;
 }
 button {
     padding: 10px 20px;
 }
 button:hover {
     background-color: green;
+}
+input:hover {
+    background-color: lightblue;
 }
