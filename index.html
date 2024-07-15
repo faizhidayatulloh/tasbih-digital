@@ -8,24 +8,6 @@
 	<title>Cek umur kalian !!</title>
 </head>
 <body>
-<div class="wadah">
-	<div class="judul">Aplikasi Cek umur</div>
-	<div class="isi">
-		<label for="satu">Ketikan Tahun Lahir Kalian :</label><br/><br/>
-		<input id="satu" type="number" placeholder="1990" autofocus ><br/><br/>
-		<button type="button" onclick="cek()">Cek</button>
-	</div>
-	<div class="faiz">Umur kalian adalah :</div>
-	<h1 id="hasil"></h1>
-</div>
-<script>
-	function cek () {
-		const masukan = document.getElementById('satu').value;
-		const date = new Date();
-		let tahun_sekarang = date.getFullYear();
-		document.getElementById('hasil').style.visibility = "visible"
-		document.getElementById('hasil').innerHTML = tahun_sekarang - masukan;
-	}
-</script>
+<input type="datetime-local">
 </body>
 </html>
