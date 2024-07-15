@@ -5,9 +5,62 @@
 	<link rel="stylesheet" href="laptop.css"/>
 	<link rel="stylesheet" media="screen and (max-width:768px) " href="tablet.css">
 	<link rel="stylesheet" media="screen and (max-widht:430px)" href="smartphone.css">
-	<title>Cek umur kalian !!</title>
+	<title>Ramalan Rasi Bintang</title>
 </head>
 <body>
-<input type="datetime-local">
+<div id="faiz"></div>
+<h1>Disclaimer !</h1>
+<p>Sebagai orang Islam, saya tidak percaya dengan <strong>ramalan</strong>, karena tidak ada yang bisa mengetahui masa depan kecuali Tuhan, tetapi
+	ini hanyalah permainan yang semoga menajadi hiburan untuk kalian orang yang doyan makan.
+</p><p>Masukan tanggal lahir kalian, untuk melihat rasi bintang yang kalian miliki. </p>
+	<p>Masukan bulan lahir :</p>
+	<p>1=Januari,2=Februari, 3=Maret, dan seterusnya sampai 12= Desember.</p>
+	<input id="bulan" type="number"/>
+	<p>Masukan tanggal lahir :</p>
+	<input id="tanggal" type="number"/><br/><br/>
+	<button type="button" onclick="cek();tampil()">Kirim</button>
+
+
+
+
+
+<script>
+function tampil() {document.getElementById('faiz').style.visibility="visible";}
+function cek () {
+	let kata ='';
+	let a = new Date(2000,0,20); //januari
+	let b = new Date(2000,1,19); // februari
+	let c = new Date(2000,2,21); // maret
+	let d = new Date(2000,3,20); // april
+	let e = new Date(2000,4,21); // mei
+	let f = new Date(2000,5,21); // juni
+	let g = new Date(2000,6,23); // juli
+	let h = new Date(2000,7,23); // agustus
+	let i = new Date(2000,8,23); // september
+	let j = new Date(2000,9,23); // oktober
+	let k = new Date(2000,10,22); //november
+	let l = new Date(2000,11,22); // desember
+	let bulanUser = document.getElementById('bulan').value;
+	bulanUser = Number(bulanUser);
+	let tanggalUser = document.getElementById('tanggal').value;
+	tanggalUser = Number(tanggalUser);
+	const tanggalLahirUser = new Date(2000,bulanUser-1,tanggalUser);
+	if (tanggalLahirUser >= l ) { kata+= "capricon" };
+	if (tanggalLahirUser < a ) { kata+='capricon' };
+	if (tanggalLahirUser >=a && tanggalLahirUser < b ) { kata+='Aquarius'};
+	if (tanggalLahirUser >= b && tanggalLahirUser < c ) {kata+="pisces"};
+	if (tanggalLahirUser >= c && tanggalLahirUser < d ) {kata+= "aries"};
+	if (tanggalLahirUser >= d && tanggalLahirUser < e) {kata+="taurus"};
+	if (tanggalLahirUser >= e && tanggalLahirUser < f) {kata+='gemini'};
+	if (tanggalLahirUser >= f && tanggalLahirUser <g) {kata+='cancer'};
+	if (tanggalLahirUser >=g && tanggalLahirUser <h) {kata+='Leo'};
+	if (tanggalLahirUser >=h && tanggalLahirUser<i) {kata+='virgo'};
+	if (tanggalLahirUser >=i && tanggalLahirUser <j) {kata+='<h1>Libra</h1><p>Anda adalah pemilik zodiak Libra. Lambang zodiak Libra adalah timbangan dan berelemen udara. Timbangan mewakili sisi kehidupan yang seimbang, teratur, setara, dan adil. Ini sangat merepresentasikan pribadi Libra. Ia tahu cara menemukan keseimbangan dan harmoni dalam hidup. Dalam hal apapun, Libra akan selalu menjadi sosok yang seimbang dan melakukan hal sama rata. Selain itu, Libra juga dikenal sebagai penasihat yang baik.</p>'};
+	if (tanggalLahirUser >=j && tanggalLahirUser <k) {kata+='scorpio'};
+	if (tanggalLahirUser >= k && tanggalLahirUser < l) {kata+='sagitarius'};
+	document.getElementById('faiz').innerHTML= kata ;
+}
+
+</script>
 </body>
 </html>
