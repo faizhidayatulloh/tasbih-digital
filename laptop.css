@@ -10,13 +10,22 @@ body {margin: 0;}
     align-items: center;
     flex-direction: column;
     background-color: rgb(98, 14, 158);
+    overflow: hidden;
+}
+.gambar {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
 .judul {
     color: white;
     font-size: 30px;
     font-weight: bolder;
-    margin-bottom: 10px;
-    text-shadow: -1px 0px 5px yellow,0px 0 10px white,1px 1px 20px red;
+    margin-bottom: 20px;
 }
 .isi {
     background-color: rgb(53, 0, 149);
@@ -54,6 +63,15 @@ button:hover {
     background-color: white;
     z-index: 1;
     right: 100%;
-    transition: 3s all;
-    padding: 20px
+    transition: 3s all linear;
+    padding: 20px;
+    background-color: lightcyan;
+}
+#faiz h1 {
+    font-size: 30px;
+    color: blue;
+}
+#faiz p {
+    font-size: 25px;
+    color: green;
 }
