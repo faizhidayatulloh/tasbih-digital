@@ -1,47 +1,20 @@
-body {margin: 0;overflow: hidden;scrollbar-width: none;}
-.satu {
-    width: 200px;
-    position: absolute;
-    left: 0;
-    height: auto
+* {box-sizing: border-box;}
+body {background-color: black;}
+.wadahSatu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
 }
+h1 {
+    color: white;
+    text-align: center;}
 
+.isiSatu {
+    width: 100%;
+    padding: 5px;
+}
 img {
     max-width: 100%;
     height: auto;
-}
-
-button {
-    position: absolute;
-    z-index: 16;
-    top: 50%;
-    left: 40%;
-    background-color: green;
-    border: none;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-.tombol2 {
-    top: 55%;
-}
-.lampubohlam {
-    top: 25%;
-    left: 35%;
-}
-button:hover {
-    background-color: yellow;
-}
-.slambu {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    height: 900px;
-    top: 0;
-    left: 0;
-    background-color: black;
-    z-index: 14;
-    color: white;
-    font-size: 30px;
-    padding: 20px;
 }
