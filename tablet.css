@@ -1,0 +1,38 @@
+body {margin: 0;}
+.satu {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    height: auto
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    position: absolute;
+    z-index: 16;
+    top: 400px;
+    left: 200px;
+    background-color: green;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: yellow;
+}
+.slambu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 14;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+}
