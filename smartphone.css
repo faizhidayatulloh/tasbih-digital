@@ -1,4 +1,4 @@
-body {margin: 0;}
+body {margin: 0;width: 100%;height: 100%;}
 .satu {
     width: 200px;
     position: absolute;
