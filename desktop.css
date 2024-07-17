@@ -1,0 +1,20 @@
+* {box-sizing: border-box;}
+body {background-color: black;}
+.wadahSatu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+h1 {
+    color: white;
+    text-align: center;}
+
+.isiSatu {
+    width: 100%;
+    padding: 5px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
