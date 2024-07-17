@@ -1,0 +1,1 @@
+document.getElementById('satu').innerHTML='Bismillah';
