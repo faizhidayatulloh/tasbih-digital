@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .wadah {
     text-align: center;
     margin-top: 100px;
@@ -17,25 +16,4 @@ body {
     z-index: -1;
     color: white;
     text-align: center;
-=======
-* {box-sizing: border-box;}
-body {background-color: black;}
-.wadahSatu {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-}
-h1 {
-    color: white;
-    text-align: center;}
-
-.isiSatu {
-    width: 100%;
-    padding: 5px;
-}
-img {
-    max-width: 100%;
-    height: auto;
->>>>>>> ba77b33c9749b6be76a913849fdd2e1d9b9bdd61
 }
