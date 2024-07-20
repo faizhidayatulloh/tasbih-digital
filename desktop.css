@@ -4,8 +4,8 @@
 }
 body {
     background-image: url(kenanganku.jpg);
-    background-size: cover;
-}
+    background-size: contain;
+    background-repeat: no-repeat;
 .slambu {
     position: absolute;
     background-color: black;
