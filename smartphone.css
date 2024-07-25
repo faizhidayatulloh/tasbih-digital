@@ -1,19 +1,32 @@
-.wadah {
+* {box-sizing: border-box;}
+.tampil {
+    background-color: blue;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px green;
+}
+
+.display {
+    background-color: white;
     text-align: center;
-    margin-top: 100px;
-}
-body {
-    background-image: url(kenanganku.jpg);
-    background-size: cover;
-}
-.slambu {
-    position: absolute;
-    background-color: black;
-    top: 0;
-    left: 0;
+    font-size: 50px;
     width: 100%;
-    height: 100%;
-    z-index: -1;
-    color: white;
-    text-align: center;
+    margin-bottom: 100px;
+}
+
+#tombol {
+    border-radius: 50%;
+    border: none;
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+#tombol:active {
+    background-color: lightblue;
 }
