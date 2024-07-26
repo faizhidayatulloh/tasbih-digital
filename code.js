@@ -3,14 +3,6 @@ function mulai() {
     angka+=1;
     document.getElementById('satu').innerHTML = angka;
 }
-function sampai() {
-    if ( angka ==33 ) {
-        window.alert('Anda mencapai '+angka)
-    }
-    if ( angka%33==0) {
-        window.alert('anda mencapai '+angka)
-    }
-}
 
 function reset() {
     angka = 0;
